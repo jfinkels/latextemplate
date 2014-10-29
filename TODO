@@ -1,0 +1,7 @@
+- both of these seem to require LuaLaTeX:
+  - It seems that in order to use old style numerals, we should use
+
+        \usepackage{fontspec}
+        \setmainfont[Numbers={OldStyle,Proportional}]{Latin Modern Roman}
+
+  - automatic kerning of periods and commas after quotes: http://tex.stackexchange.com/a/202801/4430 (this could be done manually without lualatex).
