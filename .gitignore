@@ -1,5 +1,8 @@
-*~
+# Compiled document output:
 document.pdf
+
+# emacs temporary files:
+*~
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
@@ -29,6 +32,7 @@ document.pdf
 
 ## Build tool auxiliary files:
 *.fdb_latexmk
+*.synctex
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
@@ -38,6 +42,9 @@ document.pdf
 # algorithms
 *.alg
 *.loa
+
+# achemso
+acs-*.bib
 
 # amsthm
 *.thm
@@ -69,8 +76,16 @@ document.pdf
 *.glo
 *.gls
 
+# gnuplottex
+*-gnuplottex-*
+
 # hyperref
 *.brf
+
+# knitr
+*-concordance.tex
+*.tikz
+*-tikzDictionary
 
 # listings
 *.lol
@@ -87,6 +102,7 @@ document.pdf
 *.mtc0
 
 # minted
+_minted*
 *.pyg
 
 # morewrites
@@ -110,3 +126,7 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+# WinEdt
+*.bak
+*.sav
