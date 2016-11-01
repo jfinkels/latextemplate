@@ -17,7 +17,7 @@
 \usepackage[T1]{fontenc}
 %% This must come before csquotes.
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}
+\usepackage{cfr-lm}
 %% This is strongly recommended by biblatex.
 \usepackage{csquotes}
 %% This must come before hyperref.
@@ -35,26 +35,23 @@
 %%
 %%     This command forces the built-in protrusion settings for the Computer
 %%     Modern Roman (cmr) font family to become available at this point, so
-%%     that we can override these settings on the next line. Even though we are
-%%     really using the Latin Modern Roman (lmr) fonts, microtype uses the cmr
-%%     configuration file.
+%%     that we can override these settings on the next line.
 %%
 %% \SetProtrusion
 %%
 %%     This instructs the microtype package that we are going to modify the
 %%     protrusion settings.
 %%
-%% [load=lmr-T1]
+%% [load=cmr-T1]
 %%
-%%     Loads the Type 1 (T1) encoding of the lmr font family, thereby setting
-%%     the default protrusion values for all the characters. This is only
-%%     possible after the \LoadMicrotypeFile{cmr} command (microtype
-%%     essentially considers lmr to be an alias for cmr).
+%%     Loads the Type 1 (T1) encoding of the font family named `cmr`, thereby
+%%     setting the default protrusion values for all the characters. This is
+%%     only possible after the \LoadMicrotypeFile{cmr} command.
 %%
-%% {encoding=T1, family=lmr}
+%% {encoding=T1, family=cmr}
 %%
 %%     Indicates that we are going to modify the protrusion values for the T1
-%%     encoding of the lmr font family.
+%%     encoding of the `cmr` font family.
 %%
 %% \textquotedblright = {,1000} (and similar commands)
 %%
@@ -64,8 +61,8 @@
 %%     margin.
 \LoadMicrotypeFile{cmr}
 \SetProtrusion
-    [load=lmr-T1]
-    {encoding=T1, family=lmr}
+    [load=cmr-T1]
+    {encoding=T1, family=cmr}
     {
       \textquotedblright = {,1000},
       \textquotedblleft = {1000,},
